@@ -5,21 +5,33 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>Open Heart</title>
 		<link rel="stylesheet" href="problems.css" />
+		<link
+			rel="stylesheet"
+			href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css"
+		/>
 		<script src="main.js"></script>
+		
+
 	</head>
 	<body>
 		<div class="container">
-			<h1>Open Heart🌸</h1>
+			<div class="first-part">
+				<h1>Open Heart🌸</h1>
+				<button id="toggleMode"><i class="bx bx-tone"></i></button>
+			</div>
 			<p>
 				Hello Milka, Feel free to share your thoughts and problems here. I'm
 				here to listen.
 			</p>
-			<input class="email" type="email" id="visitorEmail" placeholder="Your Email" />
-			<textarea
-				id="problemInput"
-				placeholder="Write your problems here...(haha start with the top 1)"
-			></textarea>
+			<div id="textarea-container">
+				<textarea name="" id="" cols="50" rows="4" placeholder="write your problem here..(top1)"></textarea>
+			</div>
+			<button class="addTextarea" id="addTextarea"><i class='bx bxs-folder-plus'></i>Add an other area</button>
+			<script src="main2.js"></script>
 			<button onclick="submitProblem()">Submit</button>
+		</div>
+
+			
 		</div>
 	</body>
 </html>
